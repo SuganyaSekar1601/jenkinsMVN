@@ -7,7 +7,7 @@ pipeline {
     }
   }
   stage('Test') {
-    steps
+    steps{
       sh 'echo "This is my Test step"'
     }
   }
@@ -34,5 +34,5 @@ post {
       echo 'can only be run if the current Pipeline is running at a different state than the previously completed Pipeline'
     }
   }
-}
+
 }
